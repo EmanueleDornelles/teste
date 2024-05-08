@@ -270,13 +270,13 @@ const FoodDetails = () => {
 
             <ButtonWrapper>
               <Button
-                text="Add to Cart"
+                text="Adicionar ao carrinho"
                 full
                 outlined
                 isLoading={cartLoading}
                 onClick={() => addCart()}
               />
-              <Button text="Order Now" full />
+              <Button text="Faça um pedido" full />
               <Button
                 leftIcon={
                   favorite ? (

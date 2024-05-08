@@ -46,7 +46,7 @@ const SignIn = ({ setOpenAuth }) => {
 
   const validateInputs = () => {
     if (!email || !password) {
-      alert("Please fill in all fields");
+      alert("Por favor, preencha todos os itens");
       return false;
     }
     return true;
@@ -61,7 +61,7 @@ const SignIn = ({ setOpenAuth }) => {
           dispatch(loginSuccess(res.data));
           dispatch(
             openSnackbar({
-              message: "Login Successful",
+              message: "Logado com sucesso",
               severity: "success",
             })
           );
@@ -90,14 +90,14 @@ const SignIn = ({ setOpenAuth }) => {
       </div>
       <div style={{ display: "flex", gap: "20px", flexDirection: "column" }}>
         <TextInput
-          label="Email Address"
-          placeholder="Enter your email address"
+          label="Email"
+          placeholder="Entre com seu email"
           value={email}
           handelChange={(e) => setEmail(e.target.value)}
         />
         <TextInput
-          label="Password"
-          placeholder="Enter your password"
+          label="Senha"
+          placeholder="Digite sua senha"
           password
           value={password}
           handelChange={(e) => setPassword(e.target.value)}
@@ -105,7 +105,7 @@ const SignIn = ({ setOpenAuth }) => {
 
         <TextButton>Forgot Password?</TextButton>
         <Button
-          text="Sign In"
+          text="Logar"
           onClick={handelSignIn}
           isLoading={loading}
           isDisabled={buttonDisabled}

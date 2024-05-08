@@ -174,9 +174,9 @@ const Navbar = ({ setOpenAuth, openAuth, currentUser }) => {
 
         <NavItems>
           <Navlink to="/">Home</Navlink>
-          <Navlink to="/dishes">Dishes</Navlink>
-          <Navlink to="/orders">Orders</Navlink>
-          <Navlink to="/contact">Contact</Navlink>
+          <Navlink to="/dishes">Pratos</Navlink>
+          <Navlink to="/orders">Pedidos</Navlink>
+          <Navlink to="/contact">Contato</Navlink>
         </NavItems>
 
         {isOpen && (

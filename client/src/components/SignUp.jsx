@@ -35,7 +35,7 @@ const SignUp = ({ setOpenAuth }) => {
 
   const validateInputs = () => {
     if (!name || !email || !password) {
-      alert("Please fill in all fields");
+      alert("Por favor, preencha todos os itens");
       return false;
     }
     return true;
@@ -51,7 +51,7 @@ const SignUp = ({ setOpenAuth }) => {
           dispatch(loginSuccess(res.data));
           dispatch(
             openSnackbar({
-              message: "Sign Up Successful",
+              message: "Conta criada com sucesso",
               severity: "success",
             })
           );
@@ -92,26 +92,26 @@ const SignUp = ({ setOpenAuth }) => {
       </div>
       <div style={{ display: "flex", gap: "20px", flexDirection: "column" }}>
         <TextInput
-          label="Full Name"
-          placeholder="Enter your full name"
+          label="Nome completo"
+          placeholder="Coloque seu nome completo"
           value={name}
           handelChange={(e) => setName(e.target.value)}
         />
         <TextInput
-          label="Email Address"
-          placeholder="Enter your email address"
+          label="Email"
+          placeholder="Entre com seu email"
           value={email}
           handelChange={(e) => setEmail(e.target.value)}
         />
         <TextInput
-          label="Password"
-          placeholder="Enter your password"
+          label="Senha"
+          placeholder="Digite sua senha"
           password
           value={password}
           handelChange={(e) => setPassword(e.target.value)}
         />
         <Button
-          text="Sign Up"
+          text="Criar conta"
           onClick={handleSignUp}
           isLoading={loading}
           isDisabled={buttonDisabled}

@@ -71,7 +71,7 @@ const Home = () => {
         <Img src={HeaderImage} />
       </Section>
       <Section>
-        <Title>Food Categories</Title>
+        <Title>Categoria de comidas</Title>
         <CardWrapper>
           {category.map((category) => (
             <ProductCategoryCard category={category} />
@@ -80,7 +80,7 @@ const Home = () => {
       </Section>
 
       <Section>
-        <Title>Most Popular</Title>
+        <Title>Mais pedidos</Title>
         {loading ? (
           <CircularProgress />
         ) : (

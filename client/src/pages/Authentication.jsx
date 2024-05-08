@@ -101,7 +101,7 @@ const Authentication = ({ openAuth, setOpenAuth }) => {
               <SignIn setOpenAuth={setOpenAuth} />
               <Text>
                 {" "}
-                Don't have an account ?{" "}
+                Não possui conta ?{" "}
                 <TextButton onClick={() => setLogin(false)}>Sign Up</TextButton>
               </Text>
             </>
@@ -109,7 +109,7 @@ const Authentication = ({ openAuth, setOpenAuth }) => {
             <>
               <SignUp setOpenAuth={setOpenAuth} />
               <Text>
-                Already have an account ?{" "}
+                Já tem conta ?{" "}
                 <TextButton onClick={() => setLogin(true)}>Sign In</TextButton>
               </Text>
             </>
